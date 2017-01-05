@@ -122,6 +122,33 @@ funPalindrome/fast:
 	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/build
 .PHONY : funPalindrome/fast
 
+Builder.obj: Builder.cpp.obj
+
+.PHONY : Builder.obj
+
+# target to build an object file
+Builder.cpp.obj:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Builder.cpp.obj
+.PHONY : Builder.cpp.obj
+
+Builder.i: Builder.cpp.i
+
+.PHONY : Builder.i
+
+# target to preprocess a source file
+Builder.cpp.i:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Builder.cpp.i
+.PHONY : Builder.cpp.i
+
+Builder.s: Builder.cpp.s
+
+.PHONY : Builder.s
+
+# target to generate assembly for a file
+Builder.cpp.s:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Builder.cpp.s
+.PHONY : Builder.cpp.s
+
 Main.obj: Main.cpp.obj
 
 .PHONY : Main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... funPalindrome
 	@echo ... edit_cache
+	@echo ... Builder.obj
+	@echo ... Builder.i
+	@echo ... Builder.s
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s

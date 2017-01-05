@@ -1,9 +1,12 @@
-#include <iostream>
 
+#include "Print.h"
+#include "Builder.h"
 
-int main(){
+int main() {
 
-    int n = 0;
-
+    Print *printer = Builder().addConsolePrinter()->
+            addFilePrinter((char *) "C:\\Users\\andrey\\CLionProjects\\test\\out\\test2.txt")->build();
+    printer->printResult((char *) "may))");
+    delete printer;
     return 0;
 }
