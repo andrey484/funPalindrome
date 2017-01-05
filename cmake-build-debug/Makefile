@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named funPalindrome
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 test
-.PHONY : test
+funPalindrome: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 funPalindrome
+.PHONY : funPalindrome
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+funPalindrome/fast:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/build
+.PHONY : funPalindrome/fast
 
 Main.obj: Main.cpp.obj
 
@@ -128,7 +128,7 @@ Main.obj: Main.cpp.obj
 
 # target to build an object file
 Main.cpp.obj:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/Main.cpp.obj
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Main.cpp.obj
 .PHONY : Main.cpp.obj
 
 Main.i: Main.cpp.i
@@ -137,7 +137,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/Main.cpp.i
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -146,7 +146,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/Main.cpp.s
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 # Help Target
@@ -156,7 +156,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... rebuild_cache
-	@echo ... test
+	@echo ... funPalindrome
 	@echo ... edit_cache
 	@echo ... Main.obj
 	@echo ... Main.i

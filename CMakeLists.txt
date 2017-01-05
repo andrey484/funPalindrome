@@ -1,7 +1,7 @@
 # cmake_minimum_required(VERSION <specify CMake version here>)
-project(test)
+project(funPalindrome)
 
 set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCE_FILES Main.cpp)
-add_executable(test ${SOURCE_FILES})
+add_executable(funPalindrome ${SOURCE_FILES})

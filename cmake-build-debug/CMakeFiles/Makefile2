@@ -59,39 +59,39 @@ CMAKE_SOURCE_DIR = C:\Users\andrey\CLionProjects\test
 CMAKE_BINARY_DIR = C:\Users\andrey\CLionProjects\test\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/funPalindrome.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\andrey\CLionProjects\test\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+CMakeFiles/funPalindrome.dir/all:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/depend
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\andrey\CLionProjects\test\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target funPalindrome"
+.PHONY : CMakeFiles/funPalindrome.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/funPalindrome.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
+CMakeFiles/funPalindrome.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\andrey\CLionProjects\test\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/funPalindrome.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\andrey\CLionProjects\test\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/funPalindrome.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
+funPalindrome: CMakeFiles/funPalindrome.dir/rule
 
-.PHONY : test
-
-# clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+.PHONY : funPalindrome
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+CMakeFiles/funPalindrome.dir/clean:
+	$(MAKE) -f CMakeFiles\funPalindrome.dir\build.make CMakeFiles/funPalindrome.dir/clean
+.PHONY : CMakeFiles/funPalindrome.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/funPalindrome.dir/clean
 
 .PHONY : clean
 
