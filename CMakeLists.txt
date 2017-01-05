@@ -3,5 +3,5 @@ project(funPalindrome)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES Main.cpp Print.h Builder.cpp Builder.h)
+set(SOURCE_FILES Main.cpp Print.h Builder.h)
 add_executable(funPalindrome ${SOURCE_FILES})
