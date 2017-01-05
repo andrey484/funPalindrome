@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38465ee7-2229-4844-8e1f-5a392b50c08a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.cpp" afterPath="$PROJECT_DIR$/Main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -306,7 +305,7 @@
       <workItem from="1483194899766" duration="191000" />
       <workItem from="1483195113215" duration="16931000" />
       <workItem from="1483633668234" duration="456000" />
-      <workItem from="1483634190244" duration="481000" />
+      <workItem from="1483634190244" duration="503000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1483634579891</created>
@@ -315,11 +314,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483634579891</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1483634683031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1483634683031</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18059000" />
+    <option name="totallyTimeSpent" value="18081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
