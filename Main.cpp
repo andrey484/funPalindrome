@@ -2,10 +2,10 @@
 #include "Print.h"
 #include "Builder.h"
 
-int main() {
+#define PATH "C:\\Users\\andrey\\CLionProjects\\test\\out\\test2.txt"
 
-    Print *printer = Builder().addConsolePrinter()->
-            addFilePrinter((char *) "C:\\Users\\andrey\\CLionProjects\\test\\out\\test2.txt")->build();
+int main() {
+    Print *printer = Builder().addConsolePrinter()->addFilePrinter((char *) PATH)->build();
     printer->printResult((char *) "may))");
     delete printer;
     return 0;

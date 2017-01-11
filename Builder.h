@@ -14,19 +14,20 @@ using namespace std;
 
 class Builder {
     class Compositor;
+
 private:
     Compositor *compositor;
 
     class PrintToConsole : public Print {
     public:
-        virtual void printResult(char * expr) override {
+        virtual void printResult(char *expr) override {
             std::cout << expr;
         }
     };
 
     class PrintToFile : public Print {
     public:
-        virtual void printResult(char * expr) override {
+        virtual void printResult(char *expr) override {
             outputFile << expr;
         }
 
@@ -38,7 +39,7 @@ private:
 
         PrintToFile(char *filename) {
             outputFile = ofstream(filename, ios_base::out | ios_base::trunc);
-            if(!outputFile.is_open())
+            if (!outputFile.is_open())
                 cout << "not open";
         }
     };
@@ -47,12 +48,13 @@ private:
     private:
         vector<Print *> listOfPrinters;
     public:
-        ~Compositor(){
-            for(int i=0;i<listOfPrinters.size();i++)
+        ~Compositor() {
+            for (int i = 0; i < listOfPrinters.size(); i++)
                 delete listOfPrinters[i];
         }
-        virtual void printResult(char * expr) override{
-            for(unsigned int i = 0; i < listOfPrinters.size(); i++)
+
+        virtual void printResult(char *expr) override {
+            for (unsigned int i = 0; i < listOfPrinters.size(); i++)
                 listOfPrinters.at(i)->printResult(expr);
         }
 
@@ -72,11 +74,11 @@ public:
         return this;
     }
 
-    Print *build(){
+    Print *build() {
         return compositor;
     }
 
-    Builder(){
+    Builder() {
         compositor = new Compositor;
     }
 };
